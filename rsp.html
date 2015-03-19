@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+// 0 = Paper
+// 1 = Scissor
+// 2 = Rock
+
+// Ask player to choose your choice
+var userAnswer = prompt("What's your choice? (P)aper? (S)cissor? (R)ock?");
+
+console.log(userAnswer);
+// Computer generate its choice randomly
+var compAnswer = Math.floor(Math.random()*3);
+console.log(compAnswer);
+
+// Compare who wins
+
+if (userAnswer == 'P'){
+	// P vs 0 : tie
+	// P vs 1 : comp
+	// P vs 2 : user
+	
+	console.log("You play Paper.");
+	if (compAnswer == 0){
+		console.log("Computer plays Paper.");
+		console.log("A tie game.");
+	}
+	else if (compAnswer == 1){
+		console.log("Computer plays Scissor.");
+		console.log("Computer wins!");
+	}
+	else if (compAnswer == 2){
+		console.log("Computer plays Rock.");
+		console.log("You win!");
+	}
+}
+else if (userAnswer == 'S'){
+	// S vs 0 : user
+	// S vs 1 : tie
+	// S vs 2 : comp
+	if (compAnswer == 0){
+		console.log("You win!");
+	}
+	else if (compAnswer == 1){
+		console.log("A tie game.");
+	}
+	else if (compAnswer == 2){
+		console.log("Computer wins!");
+	}
+}
+else if (userAnswer == 'R'){
+	// R vs 0 : comp
+	// R vs 1 : user
+	// R vs 2 : tie
+	if (compAnswer == 0){
+		console.log("Computer wins.");
+	}
+	else if (compAnswer == 1){
+		console.log("You win!");
+	}
+	else if (compAnswer == 2){
+		console.log("A tie game.");
+	}
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>

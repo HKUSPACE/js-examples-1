@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript">
+var name;
+var gender;
+var school;
+var age;
+
+var profile = function(){
+	var name = prompt("What's your name?");
+	var gender = prompt("Are you a boy or girl?");
+	var school = prompt("Where do you study?");
+	var age = prompt("How old are you?");
+	
+	console.log("My name is "+name);
+	console.log("I am a "+gender);
+	console.log("I am studying in "+school);
+	console.log("I am "+age+" years old.");
+	
+	if ((age >= 16) || !(gender == 'boy')){
+		alert("You are a big boy!");
+	}
+	else{
+		alert("You are so young, kid!");
+	}
+}
+
+//profile();
+
+
+//console.log(confirm("Are you happy?"));    
+//alert(confirm("Are you happy?"));
+
+</script>
+</head>
+<body>
+</body>
+<html>
